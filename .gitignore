@@ -4,3 +4,4 @@ config.json
 dist
 cdk.out
 content.json
+qr-code/qrcode.png

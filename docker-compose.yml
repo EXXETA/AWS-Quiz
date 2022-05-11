@@ -4,6 +4,7 @@ services:
     build: .
     volumes:
       - $HOME/.aws:/home/worker/.aws:ro
+      - ./qr-code:/home/worker/qr-code
     environment:
       AWS_PROFILE: "${AWS_PROFILE}"
       QUIZ_USERNAME: "${QUIZ_USERNAME}"

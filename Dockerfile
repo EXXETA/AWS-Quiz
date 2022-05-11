@@ -22,6 +22,7 @@ COPY functions.sh /home/worker/functions.sh
 COPY bootstrap.sh /home/worker/bootstrap.sh
 ADD app /home/worker/app
 ADD lambda /home/worker/lambda
+ADD generator /home/worker/generator
 RUN chown -R worker /home/worker/*
 USER worker
 
