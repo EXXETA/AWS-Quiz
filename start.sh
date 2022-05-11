@@ -28,7 +28,7 @@ API_ENDPOINT="$(aws cloudformation list-exports --region=eu-central-1 |jq -r --a
 pushd generator
     echo -n "Generating the QR Code..."
     npm i --silent
-    node index.js "$API_ENDPOINT"
+    node index.js "${API_ENDPOINT}/de"
     echo "✅ QR Code generated"
 popd
 
