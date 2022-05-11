@@ -1,0 +1,11 @@
+{
+  "name": "generator",
+  "version": "1.0.0",
+  "description": "Generates the QR Code to get it into the app",
+  "main": "index.js",
+  "dependencies": {
+    "qrcode": "^1.5.0"
+  },
+  "devDependencies": {},
+  "author": ""
+}
