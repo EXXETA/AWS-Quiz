@@ -1,3 +1,4 @@
-# aws-bid
+# aws-quiz
 
-Is a secret project, if you need to know what's going on here, you will know.
+This repository contains several files to deploy an API endpoint in AWS for our mobile quiz app. The docker container generates a qr-code, which can be
+scanned inside the app to configure an own backend.
