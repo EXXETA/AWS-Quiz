@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  deployment:
+    build: .
+    volumes:
+      - $HOME/.aws:/home/worker/.aws:ro
+    environment:
+      AWS_PROFILE: "${AWS_PROFILE}"
+      QUIZ_USERNAME: "${QUIZ_USERNAME}"
+      QUIZ_PASSWORD: "${QUIZ_PASSWORD}"
+      QUIZ_SUFFIX: "${QUIZ_SUFFIX}"
+      QUIZ_FILE_DE: "${QUIZ_FILE_DE}"
+      QUIZ_FILE_EN: "${QUIZ_FILE_EN}"
